@@ -59,7 +59,7 @@ Object.extend(Event.addBehavior, {
             } else {
               if (!element.$$assigned || !element.$$assigned.include(observer)) {
                 if (observer.attach) observer.attach(element);
-              
+                
                 else observer.call($(element));
                 element.$$assigned = element.$$assigned || [];
                 element.$$assigned.push(observer);
